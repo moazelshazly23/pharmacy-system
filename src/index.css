@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-quran: 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+    --font-cairo: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-quran {
+  font-family: 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+  line-height: 2.3;
+  word-spacing: 2px;
+}
+
+.font-cairo {
+  font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.45);
+}
+
+/* Custom tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ==========================================================================
+   AUTHENTIC SEPIA THEME (ورق سيبيا تراثي عثماني مريح للعين)
+   ========================================================================== */
+html.theme-sepia {
+  background-color: #f4ecd8 !important;
+  color: #2b1f13 !important;
+}
+
+html.theme-sepia body,
+html.theme-sepia #root {
+  background-color: #f4ecd8 !important;
+  color: #2b1f13 !important;
+}
+
+/* Card backgrounds in Sepia */
+html.theme-sepia .bg-white,
+html.theme-sepia .dark\:bg-stone-900,
+html.theme-sepia .dark\:bg-stone-950 {
+  background-color: #fcf7eb !important;
+  color: #2b1f13 !important;
+}
+
+/* Secondary background panels in Sepia */
+html.theme-sepia .bg-stone-50,
+html.theme-sepia .bg-stone-100,
+html.theme-sepia .dark\:bg-stone-800 {
+  background-color: #ede3cc !important;
+  color: #3b2a1a !important;
+}
+
+/* Borders in Sepia */
+html.theme-sepia .border-stone-200,
+html.theme-sepia .border-stone-100,
+html.theme-sepia .dark\:border-stone-800,
+html.theme-sepia .dark\:border-stone-700 {
+  border-color: #dfceaf !important;
+}
+
+/* Typography in Sepia */
+html.theme-sepia .text-stone-900,
+html.theme-sepia .dark\:text-stone-100 {
+  color: #261b0f !important;
+}
+
+html.theme-sepia .text-stone-800,
+html.theme-sepia .dark\:text-stone-200 {
+  color: #3d2b19 !important;
+}
+
+html.theme-sepia .text-stone-700,
+html.theme-sepia .dark\:text-stone-300 {
+  color: #4f3922 !important;
+}
+
+html.theme-sepia .text-stone-600,
+html.theme-sepia .text-stone-500,
+html.theme-sepia .dark\:text-stone-400 {
+  color: #6e5436 !important;
+}
+
+/* Bottom navigation in Sepia */
+html.theme-sepia .fixed.bottom-0 {
+  background-color: rgba(250, 244, 230, 0.95) !important;
+  border-top-color: #dfceaf !important;
+}
+
+/* ==========================================================================
+   AUTHENTIC DARK THEME (الوضع الليلي الهادئ لراحة العين)
+   ========================================================================== */
+html.dark {
+  background-color: #0c120f !important;
+  color: #f3f4f6 !important;
+}
+
+html.dark body,
+html.dark #root {
+  background-color: #0c120f !important;
+  color: #f3f4f6 !important;
+}
+
+html.dark .fixed.bottom-0 {
+  background-color: rgba(12, 18, 15, 0.95) !important;
+  border-top-color: #1b2921 !important;
+}
+
+/* ==========================================================================
+   AUTHENTIC LIGHT THEME (الوضع الفاتح الناصع)
+   ========================================================================== */
+html.theme-light {
+  background-color: #f8faf8 !important;
+  color: #0f172a !important;
+}
+
+html.theme-light body,
+html.theme-light #root {
+  background-color: #f8faf8 !important;
+  color: #0f172a !important;
+}

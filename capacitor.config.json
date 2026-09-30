@@ -1,0 +1,6 @@
+{
+  "appId": "com.hafiz.quran",
+  "appName": "حافظ القرآن",
+  "webDir": "dist",
+  "android": { "allowMixedContent": false }
+}
